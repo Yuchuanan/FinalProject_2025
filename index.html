@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mid-Century Mastery - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+  <div class="page-wrapper">
+    <header>
+      <nav aria-label="Main navigation">
+        <a href="index.html" class="logo">Mid-Century Mastery</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="catalog.html">Catalog</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      </nav>
+    </header>
+
+    <main id="main-content" class="hero">
+      <div class="hero-text">
+        <h1 class="animate-text">A Journey Through Mid-Century Modern Mastery</h1>
+      </div>
+      <div class="model-viewer-container">
+        <div class="bg-notes">Form Meets Function</div>
+        <div id="model-container"></div>
+        <button id="prev-model" aria-label="Previous model" class="arrow-btn">&larr;</button>
+        <button id="next-model" aria-label="Next model" class="arrow-btn">&rarr;</button>
+        <div class="info-btn-wrapper">
+          <button id="info-btn" class="info-btn">i</button>
+          <span class="info-tooltip">Drag to rotate, scroll to zoom</span>
+        </div>
+      </div>
+      <div id="product-info" role="status" aria-live="polite"></div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-branding">
+        <h2>Mid-Century Mastery</h2>
+        <p>Celebrating the iconic design of the 20th century — where form met function.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Explore More</h3>
+        <ul>
+          <li><a href="https://www.moma.org/collection/" target="_blank" rel="noopener">MoMA Collection</a></li>
+          <li><a href="https://www.vitra.com/" target="_blank" rel="noopener">Vitra</a></li>
+          <li><a href="https://www.designmuseum.org/" target="_blank" rel="noopener">Design Museum</a></li>
+        </ul>
+      </div>
+      <div class="footer-credit">
+        <p>&copy; 2025 Mid-Century Mastery — Designed by Yuchuan Zhang.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
